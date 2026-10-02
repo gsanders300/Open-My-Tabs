@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Open My Tabs",
+  "version": "1.0",
+  "description": "Opens your saved set of tabs with one click.",
+  "permissions": ["tabs"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_icon": {
+      "16": "icon.png"
+    }
+  }
+}
