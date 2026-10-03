@@ -75,7 +75,7 @@ If a `package.json` is introduced, these standard scripts should be implemented:
 ## 4. Extension Specific Rules (Manifest V3)
 
 ### Security & Permissions
-- **Principle of Least Privilege:** Request only the absolute minimum permissions (e.g., current: `["tabs"]`).
+- **Principle of Least Privilege:** Request only the absolute minimum permissions (current: none; `chrome.tabs.create` needs no permission).
 - **Content Security Policy (CSP):** Do not attempt to use inline scripts or `eval()`. All code must be local to the extension package.
 - **Safe URLs:** Validate all URLs before passing them to `chrome.tabs.create`.
 

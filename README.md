@@ -23,7 +23,7 @@ You open the same handful of sites every morning: email, calendar, your bank, th
 ## Why use it
 
 - **Fast.** One click replaces typing or bookmark-hunting for each site.
-- **Private.** No network calls, analytics, or storage. Your URL list lives in a file on your machine.
+- **Private.** Requests no permissions, so it can't read your tabs or browsing history. No network calls, analytics, or storage. Your URL list lives in a file on your machine.
 - **Small.** The whole extension is an 11-line service worker and a manifest. You can read all of it in 30 seconds.
 - **Easy to change.** Edit one array, reload, done.
 - **Modern.** Built on Chrome's Manifest V3.
@@ -34,11 +34,11 @@ Open My Tabs isn't on the Chrome Web Store. Load it unpacked:
 
 1. Clone or download this repo:
    ```bash
-   git clone https://github.com/<your-username>/OpenMyTabs.git
+   git clone https://github.com/gsanders300/Open-My-Tabs.git
    ```
 2. Open `chrome://extensions/` in Chrome.
 3. Turn on **Developer mode** (top right).
-4. Click **Load unpacked** and select the `OpenMyTabs` folder.
+4. Click **Load unpacked** and select the `Open-My-Tabs` folder.
 5. Pin the extension from the puzzle-piece menu so the button stays in your toolbar.
 
 It also works in Chromium-based browsers that support Manifest V3 extensions, such as Edge and Brave.
@@ -57,6 +57,8 @@ const urls = [
 
 Replace the examples with your own sites, then click the reload icon on the extension's card in `chrome://extensions/`. Tabs open in the order listed.
 
+> **Keep your list private.** If you push your edits to a public fork, anyone can see your URLs. Don't commit links to internal tools or links with tokens or account IDs in them. Keep your list in a local clone or a private fork.
+
 ## How it works
 
 ```
@@ -67,7 +69,7 @@ toolbar click ──► chrome.action.onClicked ──► chrome.tabs.create() f
 
 | File | Purpose |
 | --- | --- |
-| `manifest.json` | Extension metadata, permissions, and icon |
+| `manifest.json` | Extension metadata and icon (no permissions) |
 | `background.js` | Service worker that opens the tabs |
 | `icon.png` | Toolbar icon |
 | `AGENTS.md` | Coding conventions for AI coding assistants |
