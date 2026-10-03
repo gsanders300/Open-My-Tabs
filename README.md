@@ -71,7 +71,7 @@ toolbar click ──► chrome.action.onClicked ──► chrome.tabs.create() f
 | --- | --- |
 | `manifest.json` | Extension metadata and icon (no permissions) |
 | `background.js` | Service worker that opens the tabs |
-| `icon.png` | Toolbar icon |
+| `icon.png` | Toolbar and extension icon (128×128, scaled down by Chrome) |
 | `AGENTS.md` | Coding conventions for AI coding assistants |
 
 ## Troubleshooting
