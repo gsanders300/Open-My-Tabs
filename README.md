@@ -32,13 +32,13 @@ You open the same handful of sites every morning: email, calendar, your bank, th
 
 Open My Tabs isn't on the Chrome Web Store. Load it unpacked:
 
-1. Clone or download this repo:
+1. Download the [latest release](https://github.com/gsanders300/Open-My-Tabs/releases/latest) (**Source code (zip)**) and unzip it, or clone the repo:
    ```bash
    git clone https://github.com/gsanders300/Open-My-Tabs.git
    ```
 2. Open `chrome://extensions/` in Chrome.
 3. Turn on **Developer mode** (top right).
-4. Click **Load unpacked** and select the `Open-My-Tabs` folder.
+4. Click **Load unpacked** and select the unzipped or cloned folder.
 5. Pin the extension from the puzzle-piece menu so the button stays in your toolbar.
 
 It also works in Chromium-based browsers that support Manifest V3 extensions, such as Edge and Brave.
